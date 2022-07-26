@@ -1,0 +1,29 @@
+.group {
+  background: white;
+  display: flex;
+  margin: 20px;
+  border-bottom: 1px solid lightgray;
+  border-radius: 0;
+}
+input,
+select {
+  background: none;
+  border: 0;
+  color: black;
+}
+
+input {
+  padding-left: 10px;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid lightgray;
+}
+select {
+  padding: 15px;
+  outline: none;
+}
+
+input:focus,select:focus {
+  border-bottom-color: #13a284;
+  
+}

@@ -1,0 +1,94 @@
+body {
+  background-color: #13a284;
+  color: #ddd;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+nav {
+  height: 50px;
+  width: 95vw;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  margin: 0 auto;
+  /* -webkit-box-shadow: 18px 17px 50px -23px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 18px 17px 50px -23px rgba(0, 0, 0, 0.75);
+  box-shadow: 18px 17px 50px -23px rgba(0, 0, 0, 0.75); */
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+button {
+  outline: none;
+  padding: 10px 25px;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.container {
+  padding: 50px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.allpairs {
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+  color: black;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+  display: flex;
+  border-radius: 5px;
+}
+.pairGrp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  border-right: 1px solid lightgray;
+  width: 20%;
+}
+.pairGrp:nth-child(4) {
+  border-right: 0;
+}
+
+.pair {
+  font-weight: bold;
+}
+.loading {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 758px) {
+  .container {
+    padding: 20px;
+  }
+
+  .main {
+    width: 90%;
+  }
+}
