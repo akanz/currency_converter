@@ -7,6 +7,7 @@ import {
   setPairSuccess,
 } from "../reducers/pairs";
 
+// THIS IS LEFT HERE FOR TESTING PURPOSES ONLY!!
 const API_KEY = "DePZfelvCFdam6xsGNjIYlQwJSMFJFxa";
 
 export const getAllrates = () => async (dispatch: any) => {

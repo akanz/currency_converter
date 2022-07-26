@@ -4,6 +4,7 @@ import { useAppDispatch } from "./redux";
 import { getRates } from "../redux/action/index";
 import { setBase } from "../redux/reducers/pairs";
 
+// THIS IS LEFT HERE FOR TESTING PURPOSES ONLY
 const apiURL = "https://ipgeolocation.abstractapi.com/v1";
 const apiKey = "50922e3dcbfd4a7eb8e723f5a2aa77c7";
 

@@ -70,7 +70,7 @@ button:hover {
   border-right: 1px solid lightgray;
   width: 20%;
 }
-.pairGrp:nth-child(4) {
+.pairGrp:nth-of-type(4n) {
   border-right: 0;
 }
 
@@ -90,5 +90,11 @@ button:hover {
 
   .main {
     width: 90%;
+  }
+  .pairGrp {
+    width: 40%;
+  }
+  .pairGrp:nth-of-type(2n){
+    border-right: 0;
   }
 }
