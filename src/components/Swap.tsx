@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { useAppSelector } from "../hooks/redux";
+import { useAppDispatch, useAppSelector } from "../hooks/redux";
+import { setBase } from "../redux/reducers/pairs";
 import CurrencyInput from "./CurrencyInput";
 import Loading from "./loading";
 
 const Swap = () => {
   const { base, allRates, loading } = useAppSelector((state) => state.pair);
+  const dispatch = useAppDispatch();
   const [amount1, setAmount1] = useState<number>(1);
   const [amount2, setAmount2] = useState<number>(1);
   const [currency1, setCurrency1] = useState<any>(base);
   const [currency2, setCurrency2] = useState<any>("EUR");
-
-
 
   useEffect(() => {
     if (!!allRates) {
@@ -21,6 +21,12 @@ const Swap = () => {
       init();
     }
   }, [allRates]);
+
+  useEffect(() => {
+    dispatch(setBase(currency1));
+  }, [currency1, dispatch]);
+
+  console.log(base, currency1)
 
   function format(number: number) {
     return number.toFixed(4);
